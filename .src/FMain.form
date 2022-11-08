@@ -1,0 +1,28 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { LResult Label
+    MoveScaled(4,29,55,22)
+    Font = Font["+2"]
+    Alignment = Align.Center
+    Border = Border.Plain
+  }
+  { TBHoras TextBox
+    MoveScaled(20,15,24,4)
+  }
+  { LFactura Label
+    MoveScaled(13,9,38,4)
+    Alignment = Align.Center
+    Text = ("Introduzca el número de horas trabajadas:")
+  }
+  { BCalcular Button
+    MoveScaled(24,54,16,4)
+    Text = ("Calcular salario")
+  }
+  { LFactura2 Label
+    MoveScaled(13,23,38,4)
+    Alignment = Align.Center
+    Text = ("Su salario es:")
+  }
+}

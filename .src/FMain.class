@@ -1,0 +1,23 @@
+' Gambas class file
+
+
+Public Sub BCalcular_Click()
+
+  Dim horas As Integer
+  Dim salario As Integer
+  Dim horasExtra As Integer
+  Dim salarioExtra As Integer
+  
+  horas = TBHoras.Text
+  salario = horas * 15
+  
+   If (horas <= 40) Then 
+     LResult.Text = salario & "€"
+   Else 
+    horasExtra = horas - 40
+    salarioExtra = horasExtra * 5
+    salario = salario + salarioExtra
+    LResult.Text = salario & "€"
+   Endif
+
+End
